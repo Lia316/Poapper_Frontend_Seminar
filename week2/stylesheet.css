@@ -1,0 +1,15 @@
+.contentbox{
+    background-color: rgb(255, 249, 220); 
+    width: 600px; 
+    padding:30px; 
+    border: solid rgb(85, 85, 83); 
+    font-weight:bold; 
+    margin-bottom:10px;
+}
+
+ul li{
+    font-style: italic;
+}
+ol li{
+    font-style: normal;
+}
