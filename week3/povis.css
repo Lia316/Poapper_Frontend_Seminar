@@ -1,0 +1,168 @@
+header{
+    display:flex;
+    flex-direction:row;
+    color:rgb(200,1,80);
+    font-size:large;
+    justify-content:space-between;
+    
+}
+.header_title > a{
+    text-decoration:none;
+    color:rgb(200,1,80);
+    font-size:30px;
+    font-style: italic;
+    font-weight: 900;
+}
+.header_bar{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+}
+.header_bar > a{
+    text-decoration:none;
+    color:gray;
+    font-size:15px;
+    margin:5px;
+}
+
+
+.menu_bar{
+    display:flex;
+    flex-direction:row;
+        flex-shrink: 0;
+    border-top:solid rgb(172, 169, 169) 1px;
+    border-bottom:solid rgb(172, 169, 169) 1px;
+}
+.menu_bar > button{
+    border:0;
+    border-right:solid gray 1px;
+    padding-left:10px;
+    padding-right:25px;
+    font-size:15px;
+    background-color: white;
+    margin:7px;
+}
+.menu_selected{
+    color:white;
+    background-color:rgb(197, 25, 91);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 6px;
+}
+
+.content{
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(241, 241, 241);
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    flex-shrink: 0;
+    width: 250px;
+    margin-top:30px;
+    margin-left:30px;
+    margin-bottom:40px;
+    border:solid gray 1px;
+    background-color: rgb(226, 226, 226);
+}
+#namebox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    color:rgb(238, 238, 238);
+    background-color:rgb(33, 37, 49);
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-content: stretch;
+    padding: 10px;
+}
+.menu > p{
+    margin:5px;
+    color: grey;
+    font-size:10px;
+}
+#menu_text{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    font-size:15px;
+}
+#menubox{
+    height: 180px;
+    padding: 20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    color:rgb(238, 238, 238);
+    background-color:rgb(235, 235, 235);
+    border:solid rgb(170, 170, 170) 1px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.site_map{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin-top:30px;
+    margin-left:40px;
+}
+.site{
+    height: 100px;
+    width: 100px;
+    border: solid gray 1px;
+    margin-right:7px;
+    background-color: rgba(252, 228, 237, 0.61);
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    display:flex;
+    flex-direction:column;
+    width:550px;
+}
+article > .container{
+    border:solid rgb(136, 136, 136) 1px;
+    height:250px;
+    margin-top:10px;
+    margin-left:40px;
+    margin-bottom:10px;
+    background-color: rgb(255, 255, 255);
+}
+
+aside{
+    display:flex;
+    flex-direction:column;
+    width:250px;
+}
+aside > .container{
+    border:solid rgb(110, 110, 110) 1px;
+    height:250px;
+    margin-top:10px;
+    margin-left:20px;
+    margin-bottom:10px;
+    background-color: rgba(166, 219, 255, 0.623);
+}
+
+footer{
+    display:flex;
+    flex-direction:row;
+    background-color:#2e313a;
+    height:90px;
+    color:rgb(175, 175, 175);
+    margin-top:10px;
+    padding: 10px;
+    justify-content: space-around;
+}
