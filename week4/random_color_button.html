@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>random color button</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+        }
+        #plus {
+            margin-right: 10px;
+        }
+        #minus {
+            margin-left: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function incNum() {
+            var number = document.getElementById('num')
+            var body = document.getElementById('background')
+
+            let num = Number(number.innerText)
+            let colorCode = "#" + Math.round(Math.random() * 0xffffff).toString(16)
+
+            if (num < 5) {
+                number.innerText = String(num + 1)
+            } else {
+                body.style.backgroundColor = colorCode
+            }
+        }
+        function decNum() {
+            var number = document.getElementById('num')
+            var body = document.getElementById('background')
+
+            let num = Number(number.innerText)
+            let colorCode = "#" + Math.round(Math.random() * 0xffffff).toString(16)
+
+            if (num > 0) {
+                number.innerText = String(num - 1)
+            } else {
+                body.style.backgroundColor = colorCode
+            }
+        }
+    </script>
+</head>
+
+<body id='background'>
+    <button id='plus' onclick="incNum()">+</button>
+    <span id='num'>0</span>
+    <button id='minus' onclick="decNum()">-</button>
+</body>
+
+</html>

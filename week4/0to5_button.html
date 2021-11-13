@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>0 to 5 button</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+        }
+        #plus {
+            background-color: rgba(255, 198, 181, 0.87);
+            margin-right: 10px;
+        }
+        #minus {
+            background-color: rgba(176, 220, 255, 0.747);
+            margin-left: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function incNum() {
+            var number = document.getElementById('num')
+            let num = Number(number.innerText)
+            if(num < 5) {
+                number.innerText = String(num + 1)
+            }
+        }
+        function decNum() {
+            var number = document.getElementById('num')
+            let num = Number(number.innerText)
+            if (num > 0) {
+                number.innerText = String(num - 1)
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id='plus' onclick="incNum()">+</button>
+    <span id='num'>0</span>
+    <button id='minus' onclick="decNum()">-</button>
+</body>
+</html>
